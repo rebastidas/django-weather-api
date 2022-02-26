@@ -7,6 +7,7 @@ class CityWeather(models.Model):
     averagetemp = models.IntegerField(null=True, blank=True)
     citylat = models.FloatField(null=True, blank=True)
     citylon = models.FloatField(null=True, blank=True)
+    city_code = models.IntegerField(null=True, blank=True)
 
     def __str__(self):
         return self.cityname
