@@ -40,7 +40,7 @@ class WeatherInfo(APIView):
                 city_code = result['id']
             )
             c.save()
-            return Response({'result':SerializerCityWeather(c).data}, status=status.HTTP_200_OK)
+            return Response({'result':SerializerCityWeather(c).data}, status=status.HTTP_201_CREATED)
         except Exception as e:
             print(e)
             return Response({'Error':'Ups al parecer hubo un error...'}, status=status.HTTP_400_BAD_REQUEST)
