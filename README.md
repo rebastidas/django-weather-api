@@ -8,7 +8,7 @@
 
 - para instalar dependencias usar `pip install -r requirements.txt`
 
-- para levantar vase de datos `docker run -d --name postgres_weather_api -e POSTGRES_USER=weather_api_user -e POSTGRES_PASSWORD=weather_api_pass -e POSTGRES_DB=weather_api_db -p 5432:5432 postgres` 📋
+- para levantar Base de datos `docker run -d --name postgres_weather_api -e POSTGRES_USER=weather_api_user -e POSTGRES_PASSWORD=weather_api_pass -e POSTGRES_DB=weather_api_db -p 5432:5432 postgres` 📋
 
 - para migrar debe de ir a la carpeta backend y usar `python manage.py migrate` 📁
 
