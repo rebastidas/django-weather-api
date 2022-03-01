@@ -32,8 +32,7 @@
 `{
     "city":"toronto"
 }`
-
-con un header = {"Authentication" : "Bearer accessTOKEN"}
+ con un `header = {"Authentication" : "Bearer accessTOKEN"}`
 
 - respuesta esperada con 200 o 201
 `{
